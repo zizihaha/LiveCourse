@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Microsoft JhengHei, sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+h1 span {
+  font-weight: 700;
+  line-height: 42px;
+  font-size: 24px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 75px;
+}
+
+.subtitle {
+  line-height: 42px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.textWhite {
+  color: #fff;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.f-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.f-jcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.f-jcsa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header {
+  height: 960px;
+  background-image: url(/image/photo-1552393700-42696fb89bfa.png);
+  background-position: center center;
+}
+
+.header .subtitle {
+  font-weight: 700;
+  margin-bottom: 64px;
+}
+
+.about {
+  padding-top: 64px;
+  padding-bottom: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.list {
+  padding: 34px;
+  position: relative;
+}
+
+.list::before {
+  content: "";
+  position: absolute;
+  width: 384px;
+  height: 1px;
+  background-color: #000;
+  left: 10px;
+  top: 0;
+}
+
+.list__item p {
+  position: relative;
+  display: inline-block;
+}
+
+.list__item p::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #891818;
+  border-radius: 50%;
+  left: -40px;
+  top: 7px;
+}
+
+.brand {
+  padding-top: 64px;
+  padding-bottom: 160px;
+  background-color: #000;
+  text-align: center;
+}
+
+.brand .subtitle {
+  font-weight: 500;
+}
+
+.brand p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.works {
+  padding-top: 64px;
+  padding-bottom: 104px;
+  text-align: center;
+  background-image: url(/image/photo-1561291386-5be50364cfb5.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.works__list p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 42px;
+  margin-bottom: 56px;
+}
+
+.works .title {
+  margin-bottom: 24px;
+}
+
+.works .title + p {
+  line-height: 42px;
+  font-weight: 500;
+}
+
+.footer {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  background-color: #000;
+  text-align: center;
+}
+
+.footer a {
+  font-weight: 500;
+}
+/*# sourceMappingURL=all.css.map */
