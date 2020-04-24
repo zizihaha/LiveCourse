@@ -162,7 +162,7 @@ h1 span {
 
 .header {
   height: 960px;
-  background-image: url(/image/photo-1552393700-42696fb89bfa.png);
+  background-image: url(../image/photo-1552393700-42696fb89bfa.png);
   background-position: center center;
 }
 
@@ -229,7 +229,7 @@ h1 span {
   padding-top: 64px;
   padding-bottom: 104px;
   text-align: center;
-  background-image: url(/image/photo-1561291386-5be50364cfb5.png);
+  background-image: url(../image/photo-1561291386-5be50364cfb5.png);
   background-position: center bottom;
   background-repeat: no-repeat;
 }
