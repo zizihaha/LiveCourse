@@ -1,0 +1,499 @@
+// banner
+.banner{
+    background-image: url(../img/index/68.png);
+    height: 840px;
+    @include mobile{
+        background-image: url(../img/index/68@2x.png);
+        height: 394px;
+
+    }
+    &__title{
+        font-size: 4rem;
+        @include pad{
+            font-size: 3rem;
+        }
+        @include mobile{
+            font-size: 2rem;
+        }
+    }
+    &__text{
+        font-size: 2.25rem;
+        @include pad{
+            font-size: 1.25rem;
+        }
+        @include mobile{
+            font-size: 1rem;
+        }
+    }
+}
+
+// 服務介紹區
+.service{
+    background-color: $secondary;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    @include mobile{
+        padding-top: 32px;
+        padding-bottom: 56px;
+    }
+    &__list__item{
+        max-width: 23.5%;
+        margin-right: 5px;
+        padding: 0 3%;
+        @include pad{
+            max-width: 45%;
+            margin-bottom: 2.5rem;
+        }
+        @include mobile{
+            max-width: 100%;
+            padding: 0 15%;
+            margin-right: 0;
+            margin-bottom: 1.75rem;
+        }
+    }
+    &__list__img{
+        margin-bottom: 40px;
+        width: 100px;
+        height: 100px;
+        @include pad{
+            margin-bottom: 1rem;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &__list__title{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .sub-title{
+        @include mobile{
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+// 經典系列鏡框
+.classic{
+    padding: 64px 0 80px;
+    @include pad{
+        padding: 40px 0;
+    }
+    @include mobile{
+        padding: 24px 0;
+    }
+    &__list__item{
+        margin-bottom: 2rem;
+        @include mobile{
+            margin-bottom: 0.5rem;
+            height: 134px;
+        }
+    }
+    &__list__photo{
+        // 左側圖統一設定
+        width: 792px;
+        height: 320px;
+        @include pad{
+            width: 410px;
+            height: 168px;  
+        }
+    }
+    &__list__text{
+        @include pad{
+            // 設寬度整體置中
+            // width: 45%;
+        }
+        @include mobile{
+            width: 100%;
+            // height: 134px;
+            // align-items: center;
+        }
+    }
+    &__list__icon{
+        width: 48px;
+        margin-right: 8px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        @include pad{
+            max-width: 32px;
+        }
+        @include mobile{
+            // max-width: 10%;
+            background-position: 0 0;
+        }
+    }
+    &__list__title{
+        font-size: 3rem;
+        color: $primary;
+        @include pad{
+            font-size: 1.75rem;
+        }
+        @include mobile{
+            color: $white;
+        }
+    }
+    // 左側照片
+    .optical-img{
+        background-image: url(../img/index/optical.png);
+        margin-right: 24px;
+        @include pad{
+            background-image: url(../img/index/optical@2x.png);
+        }
+        @include mobile{
+            margin-right: 0;
+            display: none;
+        }
+    }
+    .sunglasses-img{
+        background-image: url(../img/index/sunglasses_bw.png);
+        margin-left: 24px;
+        &:hover{
+            background-image: url(../img/index/sunglasses.png);
+        }
+        @include pad{
+            margin-left: 0px;
+            margin-right: 24px;
+            background-image: url(../img/index/sunglasses_bw@2x.png);
+        }
+        @include mobile{
+            margin-right: 0;
+            display: none;
+        }
+    }
+    .functional-img{
+        background-image: url(../img/index/functional.png);
+        margin-right: 24px;
+        @include pad{
+            background-image: url(../img/index/functional@2x.png);
+        }
+        @include mobile{
+            margin-right: 0;
+            display: none;
+        }
+    }
+    // icon
+    .optical-icon{
+        background-image: url(../img/index/icon_diamond.svg);
+        @include mobile{
+            background-image: url(../img/index/icon_diamond_w.svg);
+        }
+    }
+    .sunglasses-icon{
+        background-image: url(../img/index/icon_sun.svg);
+        @include mobile{
+            background-image: url(../img/index/icon_sun_w.svg);
+        }
+    }
+    .functional-icon{
+        background-image: url(../img/index/icon_lightning.svg);
+        @include mobile{
+            background-image: url(../img/index/icon_lightning_w.svg);
+        }
+    }
+    // 手機照片
+    .optical-sm{
+        @include mobile{
+            background-image: url(../img/index/optical@2x.png);
+        }
+    }
+    .sunglasses-sm{
+        flex-direction: row-reverse;
+        @include pad{
+            flex-direction: row;
+        }
+        @include mobile{
+            background-image: url(../img/index/sunglasses_bw@2x.png);
+        }
+    }
+    .functional-sm{
+        @include mobile{
+            background-image: url(../img/index/functional@2x.png);
+        }
+    }
+}
+
+// 聯名設計鏡框
+.joint{
+    background-image: url(../img/index/joint-bg.png);
+    padding-top: 64px;
+    padding-bottom: 479px;
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 340px;
+    }
+    .jointInner{
+        max-width: 1540px;
+        margin: 0 auto 60px;
+        @include pad{
+            max-width: 672px;
+            padding: 0 12px;
+            margin-bottom: 2.5rem;
+        }
+        @include mobile{
+            max-width: 352px;
+            margin-bottom: 1.25rem;
+        }
+    }
+    .more{
+        // 黃色眼鏡圖片 
+        // background-image: url(../img/index/5.png);
+        // background-repeat: no-repeat;
+        // background-position: right 64px top 0;
+        position: relative;
+        // width: 100%;
+        // height: 175px;
+        height: 100%;
+        max-width: 32%;
+        margin-right: 80px;
+        @include mobile{
+            margin-right: 57px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: $white;
+            top: 15%;
+            bottom: 15%;
+            left: 10%;
+            right: -30%; 
+            @include pad{
+                top: 15%;
+                bottom: 15%;
+                left: 10%;
+                right: -72%; 
+            }
+            @include mobile{
+                right: -100%; 
+            }
+        }
+        
+        &__btn{
+            width: 118%;
+            cursor: pointer;
+            // 文字效果
+            &:hover .more__text{
+                text-shadow: 0px -100px 0px rgba(170, 6, 1, .8),0px -160px 0px rgba(170, 6, 1, .4);
+                transition: all .60s .3s;
+                @include pad{
+                    text-shadow: 0px -40px 0px rgba(170, 6, 1, .8),0px -90px 0px rgba(170, 6, 1, .4);
+                }
+            }  
+            // 箭頭圖片效果
+            &:hover .more__img{
+                transform: translateX(18px);
+                transition: all .60s .3s;
+            }
+        }
+    
+        &__text{
+            color: $primary;
+            font-weight: bold;
+            font-size: 4.5rem;
+            transition: all .8s .3s;
+            position: absolute;
+            top: 45px;
+            left: 30px;
+            z-index: 999;
+            @include pad{
+                font-size: 2.5rem;
+                top: 15px;
+                left: 20px;
+            }
+            @include mobile{
+                font-size: 1.62rem;
+                top: 5px;
+                left: 10px;
+            }
+        }
+        &__img{
+            transition: all .8s .3s;
+            @include pad{
+                width: 27px;
+            }
+            @include mobile{
+                width: 18px;
+            }
+        }
+        .pt{
+            padding-top: 0.5rem;
+            padding-left: 1rem;
+            @include pad{
+                padding-left: 0.5rem;
+            }
+            @include mobile{
+                padding-top: 0.125rem;
+            }
+        }
+    }
+    .jointList__item{
+        max-width: 49%;
+        margin-bottom: 1rem;
+        position: relative;    
+        @include mobile{
+            max-width: 100%;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        &__text{
+            font-size: 4.5rem;
+            color: $primary;
+            text-align: center;
+            position: absolute;
+            top:50%;
+            width: 100%; // 讓文字範圍滿寬
+            transform: translateY(-50%);
+            @include pad{
+                font-size: 2rem;
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+    .mr-1{
+        @include pad{
+            margin-right: 0.125rem;
+        }
+    }
+    .mb-1{
+        @include pad{
+            margin-bottom: 0.125rem;
+        }
+    }
+}
+
+// recommend
+.recommend{
+    margin-top: -320px;
+    .card{
+        &__item{
+            max-width: 23.5%;
+            margin-bottom: 1rem;
+            @include pad{
+                max-width: 48.5%;
+            }
+            @include mobile{
+                max-width: 100%;
+            }
+        }
+        &__body{
+            padding: 16px;
+            border: 1px solid $gray-100;
+        }
+        &__text{
+            color: $gray-300;
+        }
+    }
+    
+}
+
+//contact
+.contact{
+    background-color: $secondary;
+    padding: 64px 0;
+    @include pad{
+        padding: 40px 0;
+    }
+    &__text{
+        margin-bottom: 1.25rem;
+        @include pad{
+            margin-bottom: 1rem;
+        }
+        @include mobile{
+            margin-bottom: 0.5rem;
+        }
+    }
+    .contactInner{
+        max-width: 792px;
+        margin: 0 auto;
+        @include pad{
+            max-width: 498px;
+        }
+        @include mobile{
+            max-width: 327px;
+            padding: 0 12px;
+        }
+    }
+    .sub-title{
+        margin-bottom: 1.5rem;
+        @include mobile{
+            margin-bottom: 0.5rem;
+        }
+    }
+    .input-group{
+        margin-bottom: 1rem;
+        @include pad{
+            margin-bottom: 0.75rem;
+        }
+    }
+    .textarea{
+        resize: none;
+        height: 136px;
+        @include mobile{
+            height: 100px;
+        }
+    }
+    .label{
+        line-height: 2;
+    }
+    .input, .textarea{
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid $black;
+        background-color: transparent;
+        outline: 0;
+    }
+    .checkbox{
+        margin-bottom: 2.62rem;
+        @include pad{
+            margin-bottom: 1.5rem;
+        }
+        @include mobile{
+            margin-bottom: 1.25rem;
+        }
+    }
+    // 設定placeholder文字大小
+    ::placeholder, input[type="submit"], lebal {
+        font-size: 1rem;
+        line-height: 24px;
+    }
+    input[type="submit"]{
+        width: auto;
+        background-color: $primary;
+        padding: 16px 58px;
+        border: 0;
+        @include pad{
+            padding: 7px 36px;
+        }
+    }
+    input[type="checkbox"] + label {
+        display: block;
+        cursor: pointer;
+        padding-left: 4px;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    input[type=checkbox] + label::before {
+        content: "\2714";
+        border: 1px solid #000;
+        border-radius: 10%;
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        padding: 1px 0 1px 3px;
+        margin-right: 8px;
+        color: transparent;
+        line-height: 16px;
+    }
+    input[type="checkbox"]:checked + label:before{
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+    }
+}

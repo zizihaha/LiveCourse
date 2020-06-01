@@ -1,0 +1,17 @@
+// 變數
+@import "variables";
+
+@import "reset";
+
+@import "mixin";
+
+// 表頭表尾
+@import "layout";
+
+//全域css
+@import "base";
+
+// 之後開始切分每頁
+@import "index";
+
+@import "faq";

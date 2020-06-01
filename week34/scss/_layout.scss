@@ -1,0 +1,168 @@
+// header
+.header{
+    background-color: $primary;
+    padding: 15px 88px;
+    position: relative;
+    @include pad{
+        padding: 20px 48px;
+        text-align: center;
+        position: relative;
+    }
+    @include mobile{
+        padding: 10px 11px;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 24px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.4s;
+        border-radius: 3px;
+    }
+    .change{
+        .bar1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .bar2 {
+            opacity: 0;
+        }
+        .bar3 {
+            transform: rotate(45deg) translate(-3px, -5px);
+        }
+    }
+    .ham-icon{
+        display: none;
+        position: absolute;
+        padding: 10px 16px;
+        left: 0;
+        @include pad{
+            display: block;
+        }
+    }
+    .nav{
+        color: $white;
+        @include pad{
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 100%;
+            max-height: 0px;
+            transition: all 0.4s;
+            overflow: hidden;
+            z-index: 120;
+        }
+        
+    }
+    .nav a{
+        display: block;
+        padding: 20px;
+        font-size: 1.25rem;
+        @include pad{
+            &:hover{
+                background-color: darken($primary,5%);
+            }
+            background-color: $primary;
+            border-top: 1px solid $white; 
+            padding: 16px;
+        }
+    }
+    .nav.active{
+        max-height: 252px;
+    }
+    h1 a{
+        background-image: url(../img/index/logo.png);
+        width: 80px; 
+        height: 49px;
+        @include hide-text;
+        @include pad{
+            width: 48px;
+            height: 29px;
+        }
+    }
+}
+
+// footer
+.footer{
+    padding: 40px 0;
+    background-color: $primary;
+    @include mobile{
+        padding: 20px 0;
+    }
+    &__top{
+        margin-bottom: 24px;
+        border-bottom: 1px solid $white;
+    }
+    &__bottom{
+        position: relative;
+        @include mobile{
+            font-size: 0.87rem;
+        }
+    }
+    .sub-nav{
+        margin-top: 10px;
+        margin-bottom: 40px;
+        @include pad{
+            margin-top: 0;
+        }
+        @include mobile{
+            display: none;
+        }
+    }
+    .sub-nav a{
+        padding: 22px 20px 22px 0;
+        margin-right: 20px;
+    }
+    .address{
+        margin-bottom: 24px;
+        img{
+            width: 24px;
+            margin-right: 20px;
+            @include mobile{
+                width: 13px;
+                margin-right: 8px;
+            }
+        }
+        span{
+            font-size: 1.25rem;
+            @include mobile{
+                font-size: 1rem;
+            }
+        }
+    }
+    .socialLink__item{
+        margin-left: 32px;
+        @include pad{
+            margin-left: 24px;
+        }
+        &__img{
+            @include pad{
+                width: 24px;
+            }
+        }
+    }
+    .privacy__item{
+        margin-left: 62px;
+        @include pad{
+            margin-left: 24px;
+        }
+        @include mobile{
+            margin-left: 0;
+        }
+    }
+    .logo{
+        margin-right: 38px;
+        @include pad{
+            display: none;
+        }
+        @include mobile{
+            display: block;
+            width: 46px;
+            height: 28px;
+            margin-right: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

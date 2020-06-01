@@ -1,0 +1,24 @@
+// 圖片取代文字
+@mixin hide-text {
+    display: inline-block;
+    text-indent: 110%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// 斷點要下多少好呢992 768
+
+@mixin pad{
+    @media (max-width:992px){
+        @content;
+    }
+}
+
+// 斷點要下多少好呢767 375
+// 覺得767單欄有點怪
+@mixin mobile{
+    @media (max-width:767px){
+        @content;
+    }
+}
+

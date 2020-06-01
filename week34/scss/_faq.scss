@@ -1,0 +1,93 @@
+.faqBanner{
+    background-image: url(../img/FAQ/faq-banner.png);
+    height: 304px;
+    @include pad{
+        background-image: url(../img/FAQ/faq-banner-md@2x.png);
+    }
+    @include mobile{
+        background-image: url(../img/FAQ/faq-banner-sm@2x.png);
+        height: 143px;
+    }
+    .container{
+        position: relative;
+    }
+    &__text{
+        font-size: 64px;
+        margin-right: 10px;
+        position: absolute;
+        line-height: 1.5;
+        left: 12px;
+        bottom: 0;
+        @include pad{
+            font-size: 3rem;
+        }
+        @include mobile{
+            font-size: 1.75rem;
+        }
+    } 
+    &__icon{
+        margin-left: 16px;
+        @include pad{
+            width: 48px;
+            margin-left: 8px;
+        }
+        @include mobile{
+            width: 24px;
+        }
+    } 
+}
+
+.question{
+    padding-top: 88px;
+    padding-bottom: 88px;
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 104px;
+    }
+    @include mobile{
+        padding-top: 24px;
+        padding-bottom: 56px;
+    }
+    &__title{
+        font-size: 2rem;
+        @include pad{
+            font-size: 1.25rem;
+        }
+    }
+    .list{
+        &__item:not(.active) .arrow{
+            transform: rotate(180deg);
+            transition: all .35s;
+        }
+        &__header{
+            padding: 22px 38px;
+            border: 1px solid $black;
+            border-top: 0;
+            &:hover{
+                color: $primary;
+            }
+            @include mobile{
+                padding: 16px;
+            }
+        }
+        &__title{
+            font-size: 1.25rem;
+            @include pad{
+                font-size: 1rem;
+            }
+        }
+        &__body{
+            padding: 22px 38px;
+            background-color: $gray-100;
+            border: 1px solid $black;
+            border-top: 0;
+            @include mobile{
+                padding: 16px;
+            }
+        }
+        .arrow{
+            transition: all .35s;
+        }
+        
+    }
+}
