@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment</title>
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <section class="d-flex">
+      <!-- 左側選單 -->
+      <nav class="sidebar bg-primary text-black font-weight-bold fixed-top fixed-bottom overflow-auto">
+        <div class="d-flex flex-column justify-content-between h-100 py-4 pl-5">
+          <!-- 選單 -->
+          <ul class="list-unstyled">
+            <li class="pb-4">
+              <a href="javascript:void(0)">
+                <img src="assets/images/logo-ANSWER.svg" alt="">
+              </a>
+            </li>
+            <li class="py-3">
+              <a href="javascript:void(0)" class="d-flex align-items-center">
+                <i class="material-icons mr-3">assessment</i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="py-3">
+              <a href="javascript:void(0)" class="d-flex align-items-center">
+                <i class="material-icons mr-3">forum</i>
+                <span>Question</span>
+              </a>
+            </li>
+            <li class="py-3">
+              <a href="assignment.html" class="d-flex align-items-center">
+                <i class="material-icons mr-3">assignment</i>
+                <span>Assignment</span>
+              </a>
+            </li>
+            <li class="py-3">
+              <a href="javascript:void(0)" class="d-flex align-items-center">
+                <i class="material-icons mr-3">video_library</i>
+                <span>Course</span>
+              </a>
+            </li>
+            <li class="py-3">
+              <a href="javascript:void(0)" class="d-flex align-items-center">
+                <i class="material-icons mr-3">people_alt</i>
+                <span>Admin</span>
+              </a>
+            </li>
+            <li class="py-3">
+              <a href="javascript:void(0)" class="d-flex align-items-center">
+                <i class="material-icons mr-3">settings</i>
+                <span>Settings</span>
+              </a>
+            </li>
+          </ul>
+          <!-- 使用者 -->
+          <div class="d-flex align-items-center">
+            <img src="assets/images/photo-1514794749374-fb67509dbb7f.jpg" class="userAvatar mr-3 rounded-circle" alt="user-avatar" width="40px" height="40px">
+            <div>
+              <h6 class="mb-0">Andy Chen</h6>
+              <small class="font-sm text-muted">10:38 AM (4 hours ago)</small>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- 右側內容 -->
+      <main class="main container-fluid">
+        <div class="container mx-auto px-6 py-4">
+          
+<div class="d-flex justify-content-between align-items-center pb-4">
+  <div class="d-flex align-items-center">
+    <h3 class="mr-6 mb-0">Assignment</h3>
+
+    <div class="dropdown">
+      <button class="btn position-relative p-0 pr-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Courses 
+        <i class="material-icons arrowDown">keyboard_arrow_down</i>
+      </button>
+      
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="javascript:void(0)">Action</a>
+        <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+        <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- icon -->
+  <div class="d-flex">
+    <a href="javascript:void(0)"><i class="material-icons mr-4">search</i></a>
+    <a href="javascript:void(0)"><i class="material-icons">notifications_active</i></a>
+  </div>
+</div>
+
+<div class="d-flex justify-content-between mb-2">
+  <div class="dropdown">
+    <button class="btn position-relative p-0 pr-4 font-weight-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      All (4)
+      <i class="material-icons arrowDown">keyboard_arrow_down</i>
+    </button>
+    
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="javascript:void(0)">Action</a>
+      <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+      <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+    </div>
+  </div>
+  <small class="text-muted">2 comments</small>
+</div>
+
+<!-- 下方內容 -->
+<div class="row">
+  <!-- 左邊 -->
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+        <div class="d-flex justify-content-between">
+          <small>Chapter Assignment 2</small>
+          <small>4 hrs ago</small>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span class="font-weight-bold text-truncate" style="width: 11rem;">Please check this file abcd123</span>
+          <small class="text-muted">Emily Wang</small>
+        </div>
+      </a>
+
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+        <div class="d-flex justify-content-between">
+          <small>Chapter Assignment 1</small>
+          <small>12 hrs ago</small>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span class="font-weight-bold">My Homework</span>
+          <small class="text-muted">David Xu</small>
+        </div>
+      </a>
+
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+        <div class="d-flex justify-content-between">
+          <small>Final Assignment</small>
+          <small>18 hrs ago</small>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span class="font-weight-bold text-truncate" style="width: 11rem;">Have a problem with this abcdefg</span>
+          <small class="text-muted">Tony Wei</small>
+        </div>
+      </a>
+
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+        <div class="d-flex justify-content-between">
+          <small>Final Assignment</small>
+          <small>19 hrs ago</small>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span class="font-weight-bold text-nowrap" style="width: 8rem;">Did I do it right?</span>
+          <small class="text-muted">Christina Lin</small>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- 右邊 -->
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <!-- 第1塊 -->
+      <div class="tab-pane fade mb-3 show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+        <div class="card">
+          <div class="card-header bg-primary d-flex justify-content-between align-items-center">
+            <div>
+              <small class="font-x-sm">Chapter Assignment 2 / HTML&CSS</small>
+              <h6 class="mb-0">Please check this file for me, thanks!</h6>
+            </div>
+            <a href="javascript:void(0)"> <i class="material-icons">more_vert</i></a>
+          </div>
+
+          <div class="card-body pr-6">
+              <div class="media">
+                <img src="assets/images/photo-1504051771394-dd2e66b2e08f.jpg" class="userAvatar mr-3 rounded-circle" alt="user-avatar">
+                <div class="media-body border-bottom bordor-success">
+                  <h5 class="mt-0 mb-0">Emily Wang</h5>
+                  <small class="font-x-sm mb-3 text-muted">10:38 AM (4 hours ago)</small>
+                  <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code>? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                  <a type="button" class="btn btn-primary mb-4 d-inline-flex align-items-center">
+                    <i class="material-icons mr-2">attach_file</i>
+                    <span class="font-weight-bold">HW-2-David.zip</span>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="media mt-4">
+                <img src="assets/images/photo-1514794749374-fb67509dbb7f.jpg" class="userAvatar mr-3 rounded-circle" alt="user-avatar">
+                <div class="media-body">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h5 class="mt-0 mb-0">Andy Chen (You)</h5>
+                      <small class="font-x-sm mb-3 text-muted">10:38 AM (4 hours ago)</small>
+                    </div>
+                    <!-- 星 -->
+                    <div>
+                      <a href="javascript:void(0)"><i class="material-icons mr-4">star_border</i></a>
+                      <a href="javascript:void(0)"><i class="material-icons">edit</i></a>
+                    </div>
+                  </div>
+                  
+                  
+                  <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+                  <p> You can:</p>
+                  <ul>
+                    <li>adjust the <code>vertical-align</code>of the image to position it elsewhere (e.g. the <code>middle</code>) or</li>
+                    <li>change the <code>display</code> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第2塊 -->
+      <div class="tab-pane fade mb-3" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+        <div class="card">
+          <div class="card-header bg-primary d-flex justify-content-between align-items-center">
+            <div>
+              <small class="font-x-sm">Chapter Assignment 1</small>
+              <h6 class="mb-0">My Homework</h6>
+            </div>
+            <a href="javascript:void(0)"><i class="material-icons">more_vert</i></a>
+          </div>
+
+          <div class="card-body pr-6">
+              <div class="media">
+                <img src="assets/images/photo-1504051771394-dd2e66b2e08f.jpg" class="userAvatar mr-3 rounded-circle" alt="user-avatar">
+                <div class="media-body border-bottom bordor-success">
+                  <h5 class="mt-0 mb-0">Emily Wang</h5>
+                  <small class="font-x-sm mb-3 text-muted">10:38 AM (4 hours ago)</small>
+                  <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code>? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                  <a type="button" class="btn btn-primary mb-4 d-inline-flex align-items-center">
+                    <i class="material-icons mr-2">attach_file</i>
+                    <span class="font-weight-bold">HW-2-David.zip</span>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="media mt-4">
+                <img src="assets/images/photo-1514794749374-fb67509dbb7f.jpg" class="userAvatar mr-3 rounded-circle" alt="user-avatar">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-0">Emily Wang</h5>
+                  <small class="font-x-sm mb-3 text-muted">10:38 AM (4 hours ago)</small>
+                  <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+                  <p> You can:</p>
+                  <ul>
+                    <li>adjust the <code>vertical-align</code>of the image to position it elsewhere (e.g. the <code>middle</code>) or</li>
+                    <li>change the <code>display</code> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 第3塊 -->
+      <div class="tab-pane fade mb-3" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+        <div class="card">
+          <div class="card-header bg-primary d-flex justify-content-between align-items-center">
+            <div>
+              <small class="font-x-sm">Final Assignment</small>
+              <h6 class="mb-0">Have a problem with this</h6>
+            </div>
+            <i class="material-icons">more_vert</i>
+          </div>
+
+          <div class="card-body pr-6">
+              <div class="media">
+                <img src="assets/images/photo-1504051771394-dd2e66b2e08f.jpg" class="userAvatar mr-3 rounded-circle" alt="user-avatar">
+                <div class="media-body border-bottom bordor-success">
+                  <h5 class="mt-0 mb-0">Emily Wang</h5>
+                  <small class="font-x-sm mb-3 text-muted">10:38 AM (4 hours ago)</small>
+                  <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code>? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                  <a type="button" class="btn btn-primary mb-4 d-inline-flex align-items-center">
+                    <i class="material-icons mr-2">attach_file</i>
+                    <span class="font-weight-bold">HW-2-David.zip</span>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="media mt-4">
+                <img src="assets/images/photo-1514794749374-fb67509dbb7f.jpg" class="userAvatar mr-3 rounded-circle" alt="user-avatar">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-0">Emily Wang</h5>
+                  <small class="font-x-sm mb-3 text-muted">10:38 AM (4 hours ago)</small>
+                  <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+                  <p> You can:</p>
+                  <ul>
+                    <li>adjust the <code>vertical-align</code>of the image to position it elsewhere (e.g. the <code>middle</code>) or</li>
+                    <li>change the <code>display</code> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 第4塊 -->
+      <div class="tab-pane fade mb-3" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+        <div class="card">
+          <div class="card-header bg-primary d-flex justify-content-between align-items-center">
+            <div>
+              <small class="font-x-sm">Final Assignment</small>
+              <h6 class="mb-0">Did I do it right?</h6>
+            </div>
+            <i class="material-icons">more_vert</i>
+          </div>
+
+          <div class="card-body pr-6">
+              <div class="media">
+                <img src="assets/images/photo-1504051771394-dd2e66b2e08f.jpg" class="userAvatar mr-3 rounded-circle" alt="user-avatar">
+                <div class="media-body border-bottom bordor-success">
+                  <h5 class="mt-0 mb-0">Emily Wang</h5>
+                  <small class="font-x-sm mb-3 text-muted">10:38 AM (4 hours ago)</small>
+                  <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code>? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                  <a type="button" class="btn btn-primary mb-4 d-inline-flex align-items-center">
+                    <i class="material-icons mr-2">attach_file</i>
+                    <span class="font-weight-bold">HW-2-David.zip</span>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="media mt-4">
+                <img src="assets/images/photo-1514794749374-fb67509dbb7f.jpg" class="userAvatar mr-3 rounded-circle" alt="user-avatar">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-0">Emily Wang</h5>
+                  <small class="font-x-sm mb-3 text-muted">10:38 AM (4 hours ago)</small>
+                  <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+                  <p> You can:</p>
+                  <ul>
+                    <li>adjust the <code>vertical-align</code>of the image to position it elsewhere (e.g. the <code>middle</code>) or</li>
+                    <li>change the <code>display</code> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 下方 reply -->
+    <div class="d-flex justify-content-between">
+      <div>
+        <a class="btn px-1" href="javascript:void(0)" role="button">
+          <i class="material-icons">chevron_left</i>
+        </a>
+        <a class="btn px-1" href="javascript:void(0)" role="button">
+          <i class="material-icons">chevron_right</i>
+        </a>
+      </div>
+      <div>
+        <input class="btn btn-outline-secondary mr-3 px-5" type="submit" value="Mark as read">
+        <input class="btn btn-secondary px-5" type="submit" value="Reply">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+        </div>
+      </main>
+    </section >
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </body>
+
+</html>

@@ -1,0 +1,36 @@
+.main{
+    margin-left: 296px;
+}
+
+// 直接改在BS的class
+.dropdown{
+    position: relative;
+    .arrowDown{
+        position: absolute;
+        top: 1px;
+        right: -5px;
+        color: $secondary;
+    }
+}
+
+.userAvatar{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+
+// 通用類別
+.font-sm{
+    font-size: $font-size-sm;
+    display: inline-block;
+}
+
+.font-x-sm{
+    font-size: $font-size-x-sm;
+    display: inline-block;
+}
+
+code{
+    color: $darkgreen;
+    background-color: $lightgreen;
+}
